@@ -1,0 +1,20 @@
+class Dog:
+    def speak(self):
+        print("dog bark")
+
+    def eat(self):
+        print("dog eat")
+
+class Cat(Dog):  # Cat inherits from Dog
+    def speak(self):  # overriding
+        print("cat bark")
+
+# objects
+d = Dog()
+c = Cat()
+
+d.speak() # calls Dog's speak
+d.eat()
+
+c.speak() # calls Cat's speak - overridden
+c.eat()   # inherits from Dog
