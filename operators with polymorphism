@@ -1,0 +1,5 @@
+
+print(10 + 20)  # adds numbers
+print("hello" + "kprit")
+print(2 * 3)  # multiplies numbers
+print("h" * 3)  # repeats string
