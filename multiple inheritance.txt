@@ -1,0 +1,16 @@
+class Manager:
+    def work(self):
+        print("Manager work")
+
+class Employee:
+    def speak(self):
+        print("Employee speak")
+
+class TeamLead(Manager, Employee):
+    def group_project(self):
+        print("TeamLead group project")
+
+d1 = TeamLead()
+d1.work()
+d1.speak()
+d1.group_project()
