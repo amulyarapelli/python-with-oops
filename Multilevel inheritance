@@ -1,0 +1,16 @@
+class Animal:
+    def eat(self):
+        print("animal eat")
+
+class Mammal(Animal):
+    def sleep(self):
+        print("mammal sleep")
+
+class Dog(Mammal):
+    def speak(self):
+        print("dog speak")
+
+d1 = Dog()
+d1.eat()    # from Animal (grandparent)
+d1.sleep()  # from Mammal (parent)
+d1.speak()  # from Dog (own)
