@@ -1,0 +1,11 @@
+class Student:
+    name = "Kprit"
+    age = 21
+
+class Demo(Student): # Demo inherits from Student
+    branch = "aiml"
+
+d1 = Demo()
+print(d1.name)   # inherited from Student
+print(d1.age)    # inherited from Student
+print(d1.branch) # own attribute of Demo
