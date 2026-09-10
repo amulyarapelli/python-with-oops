@@ -1,0 +1,18 @@
+class Employee:
+    def __init__(self, name, age, salary):
+        self.name = name
+        self.age = age
+        self.salary = salary
+
+    def read(self):
+        print(self.name, self.age, self.salary)
+        print("reading")
+
+# Creating multiple objects
+e1 = Employee("ABC", 25, 50000)
+e2 = Employee("XYZ", 26, 60000)
+e3 = Employee("PQR", 27, 70000)
+
+e1.read()
+e2.read()
+e3.read()
