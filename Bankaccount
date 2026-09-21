@@ -1,0 +1,26 @@
+class BankAccount:
+    acc_holder_name = "Lahari"
+    acc_number = 456989928831
+    balance = 1000
+
+    def deposit(self, amount):
+        self.balance = self.balance + amount
+        print("Deposited:", amount)
+        print("New Balance:", self.balance)
+
+    def withdraw(self, cash):
+        self.balance = self.balance - cash
+        print("Withdrawn:", cash)
+        print("New Balance:", self.balance)
+
+    def display_balance(self):
+        print("Balance:", self.balance)
+
+# Create object
+b1 = BankAccount()
+b1.display_balance()
+
+b1.deposit(500)
+b1.withdraw(200)
+b1.display_balance()
+    
