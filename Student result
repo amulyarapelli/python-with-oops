@@ -1,0 +1,50 @@
+class Student:
+    def __init__(self, name, roll_no, m1, m2, m3):
+        self.name = name
+        self.roll_no = roll_no
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def calculate_total(self):
+        return self.m1 + self.m2 + self.m3
+
+    def calculate_average(self):
+        return self.calculate_total() / 3
+
+    def calculate_grade(self):
+        avg = self.calculate_average()
+        if avg >= 90:
+            return "A"
+        elif avg >= 75:
+            return "B"
+        elif avg >= 60:
+            return "C"
+        elif avg >= 40:
+            return "D"
+        else:
+            return "Fail"
+
+    def display_result(self):
+        print("----- Student Result -----")
+        print(f"Name: {self.name}")
+        print(f"Roll No: {self.roll_no}")
+        print(f"Marks: {self.m1}, {self.m2}, {self.m3}")
+        print(f"Total Marks: {self.calculate_total()}")
+        print(f"Average: {self.calculate_average():.2f}")
+        print(f"Grade: {self.calculate_grade()}")
+
+# Create object
+s1 = Student("Amulya", 20, 85, 78, 92)
+s1.display_result()
+
+print("\n")
+# Take input from user if you want
+name = input("Enter Name: ")
+roll = int(input("Enter Roll No: "))
+m1 = int(input("Enter Mark1: "))
+m2 = int(input("Enter Mark2: "))
+m3 = int(input("Enter Mark3: "))
+
+s2 = Student(name, roll, m1, m2, m3)
+s2.display_result()
