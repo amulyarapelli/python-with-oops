@@ -1,0 +1,12 @@
+class Employee:
+    name = "Dinnu"
+    age = 20
+
+print(Employee.name)  # Public - can access directly
+print(Employee.age)
+
+class Creator:
+    name = "ABCD"
+
+c = Creator()
+print(c.name) # Public
