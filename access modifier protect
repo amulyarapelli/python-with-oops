@@ -1,0 +1,15 @@
+class Student:
+    _marks = 75   # protected member
+
+    def show(self):
+        print(self._marks)
+
+class Result(Student):
+    def exam_result(self):
+        print(self._marks)
+
+s = Student()
+r = Result()
+
+s.show()         # 75
+r.exam_result()  # 75
