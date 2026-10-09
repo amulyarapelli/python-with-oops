@@ -1,0 +1,17 @@
+class Student:
+    def __init__(self, name, roll_no, age):
+        self.name = name
+        self.roll_no = roll_no
+        self.age = age
+
+    def display(self):
+        print("Name:", self.name)
+        print("Roll No:", self.roll_no)
+        print("Age:", self.age)
+
+s1 = Student("Lahari", 20, 18)
+s1.display()
+
+# For multiple students - easy
+s2 = Student("Ammu", 21, 19)
+s2.display()
