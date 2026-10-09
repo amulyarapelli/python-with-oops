@@ -1,0 +1,13 @@
+class Employee:
+    __name = "ABCD"
+    __age = 20
+
+    def show(self):
+        print(self.__name)
+        print(self.__age)
+
+s = Employee()
+s.show()  # Works
+
+# print(s.__name) # ERROR
+# print(s.__age)  # ERROR
