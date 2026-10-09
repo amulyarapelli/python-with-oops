@@ -1,0 +1,18 @@
+class Employee:
+    def __init__(self, emp_id, name, salary):
+        self.emp_id = emp_id
+        self.name = name
+        self.salary = salary
+
+    def display(self):
+        print(self.emp_id, self.name, self.salary)
+
+# List of employees
+employees = [
+    Employee(101, "Lahari", 20000),
+    Employee(102, "Ammu", 25000),
+    Employee(103, "Kavya", 30000)
+]
+
+for e in employees:
+    e.display()
