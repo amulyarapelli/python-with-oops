@@ -1,0 +1,10 @@
+class Employee:
+    def __init__(self, emp_id, name, basic):
+        self.emp_id = emp_id
+        self.name = name
+        self.basic = basic
+    def get_total(self):
+        return self.basic + (self.basic*0.2) + (self.basic*0.1)
+
+e = Employee(input("ID: "), input("Name: "), int(input("Basic: ")))
+print("Total Salary:", e.get_total())
